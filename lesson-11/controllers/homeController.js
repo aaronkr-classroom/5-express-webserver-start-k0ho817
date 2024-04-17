@@ -12,7 +12,23 @@ exports.respondWithName1 = (req, res) => {
  * Listing 10.3
  */
 exports.getHome = (req, res) => {
-    res.render('index');
+    res.render('index', {
+        name : "k0ho817",
+        people: {
+            usa: {
+                einstein: "Albert Einstein",
+                musk: "Elon Musk",
+                jobs: "Steve Jobs"
+            },
+            korea : {
+                psy: "박지상",
+                kim: "김연아"
+            },
+            mexico: {
+                jesus: "Jesus Alvarez"
+            }
+        }
+    });
 } // "/" index
 // exports.getContact = (req, res) => {} // "/contact" GET method
 // exports.postContact = (req, res) => {} // "/contact" POST method
