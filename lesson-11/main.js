@@ -1,8 +1,6 @@
 // main.js
 "use strict";
 
-const expressEjsLayouts = require('express-ejs-layouts');
-
 // @TODO: 웹 서버를 만들고 실행한다.
 const port = 3000,
 express = require('express'),
